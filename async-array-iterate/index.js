@@ -1,6 +1,4 @@
-/*
-* Testing out iterating through arrays synchronously and asynchronously
-*/
+/* Testing out iterating through arrays synchronously and asynchronously */
 
 const longRunningFunction = async (name, id) => {
   return new Promise((resolve) => {
@@ -70,11 +68,7 @@ const mapLoop = async (name, testArray) => {
 }
 
 forLoop('forLoop', testArray)
-
 forOfLoop("forOfLoop", testArray)
-
 forEachLoop('forEachLoop', testArray)
-
 mapLoop("mapLoop", testArray)
-
 reduceLoop("reduceLoop", testArray)
